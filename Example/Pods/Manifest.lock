@@ -1,0 +1,16 @@
+PODS:
+  - iOSStatistic (0.1.0)
+
+DEPENDENCIES:
+  - iOSStatistic (from `../`)
+
+EXTERNAL SOURCES:
+  iOSStatistic:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  iOSStatistic: c4d456b67fc9b32d91853c6d707817d70581d46b
+
+PODFILE CHECKSUM: 9ed4b64ff80543478a65c1259cfc65fc0267bb34
+
+COCOAPODS: 1.1.1

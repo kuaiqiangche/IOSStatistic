@@ -1,0 +1,6 @@
+framework module iOSStatistic {
+  umbrella header "iOSStatistic-umbrella.h"
+
+  export *
+  module * { export * }
+}
