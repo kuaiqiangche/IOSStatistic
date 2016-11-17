@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'iOSStatistic_Example' do
+  pod 'iOSStatistic', :path => '../'
+
+  target 'iOSStatistic_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
