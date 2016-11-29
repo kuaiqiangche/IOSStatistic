@@ -9,7 +9,8 @@
 #import "UICollectionView+AutomaticEvents.h"
 #import "NSObject+KQCSwizzle.h"
 #import <objc/message.h>
-#import "UIView+kqc_extra.h"
+#import "UIView+KQCST_View.h"
+#import "KQCStatistic.h"
 
 @implementation UICollectionView (AutomaticEvents)
 
@@ -26,14 +27,14 @@
     }
 }
 
-void swizzle_didSelectItemAtIndexPath(id self, SEL _cmd, id collectionView, id indexpath)
-
+void swizzle_didSelectItemAtIndexPath(id self, SEL _cmd, UICollectionView * collectionView, NSIndexPath * indexpath)
 {
-    
     SEL selector = NSSelectorFromString(@"swizzle_didSelectItemAtIndexPath");
-    
     ((void(*)(id, SEL,id, id))objc_msgSend)(self, selector, collectionView, indexpath);
-    NSLog(@"collectionView select:target-->%@\n--->indexpath:%@",[collectionView kqc_extra_viewController],indexpath);
     
+    UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexpath];
+    NSString *eventName = @"点击";
+    NSDictionary *properties = @{@"path":[cell viewPath], @"text":[cell fetchViewText],@"idx":[NSString stringWithFormat:@"%@,%@",@(indexpath.section),@(indexpath.item)],@"img":[cell fetchViewURLs],@"id":@""};
+    [[KQCStatistic sharedInstance] statisticsOfEvent:eventName properties:properties]; 
 }
 @end

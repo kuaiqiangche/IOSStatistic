@@ -1,7 +1,7 @@
-
+source 'http://git.kuaiqiangche.cc/shiheng/kqcSpecs.git'
 
 target 'iOSStatistic_Example' do
-  pod 'iOSStatistic', :path => '../'
+  pod 'iOSStatistic'
 
   target 'iOSStatistic_Tests' do
     inherit! :search_paths

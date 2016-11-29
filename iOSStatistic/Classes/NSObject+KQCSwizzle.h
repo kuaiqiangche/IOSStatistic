@@ -10,10 +10,9 @@
 #import <UIKit/UIKit.h>
 
 @interface NSObject (KQCSwizzle)
-
 /**
  利用runtime对方法进行混淆
-
+ 
  @param origSel 原始的方法
  @param swiSel 混淆的方法
  */

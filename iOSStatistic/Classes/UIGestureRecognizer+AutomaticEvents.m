@@ -10,6 +10,8 @@
 #import "NSObject+KQCSwizzle.h"
 #import <objc/runtime.h>
 #import "NSObject+KQCSwizzle.h"
+#import "KQCStatistic.h"
+#import "UIView+KQCST_View.h"
 
 @implementation UIGestureRecognizer (AutomaticEvents)
 
@@ -58,8 +60,15 @@
 }
 
 - (void)swizzle_tap:(UIGestureRecognizer*)gr {
-    NSLog(@"UIGestureRecognizer %@ ", gr);
     [self swizzle_tap:gr];
+    NSString *eventName = @"点击";
+    NSUInteger idx;
+    if (gr.view.superview) {
+        idx = [gr.view.superview.subviews indexOfObject:gr.view];
+    }
+    NSDictionary *properties = @{@"path":[gr.view viewPath], @"text":[gr.view fetchViewText],@"idx":[NSString stringWithFormat:@"%@",@(idx)],@"img":[gr.view fetchViewURLs],@"id":@""};
+    
+    [[KQCStatistic sharedInstance] statisticsOfEvent:eventName properties:properties];
 }
 
 @end

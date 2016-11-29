@@ -8,6 +8,8 @@
 
 #import "UIControl+AutomaticEvents.h"
 #import "NSObject+KQCSwizzle.h"
+#import "KQCStatistic.h"
+#import "UIView+KQCST_View.h"
 
 @implementation UIControl (AutomaticEvents)
 
@@ -16,16 +18,16 @@
 }
 
 - (void)swiz_sendAction:(SEL)action to:(id)target forEvent:(UIEvent *)event {
-    //插入埋点代码
-    if (![NSStringFromClass([target class]) hasPrefix:@"GrowingUI"]/*[target isKindOfClass:NSClassFromString(@"GrowingUIControlObserver")]*/) {
-        [self performUserStastisticsAction:action to:target forEvent:event];
-    }
     [self swiz_sendAction:action to:target forEvent:event];
-}
-
-- (void)performUserStastisticsAction:(SEL)action to:(id)target forEvent:(UIEvent *)event {
-    
-    NSLog(@"B2Bhook success.n[1]action:%@n[2]target:%@ n[3]event:%ld", NSStringFromSelector(action), target, (long)event);
+    if (![NSStringFromClass([target class]) hasPrefix:@"GrowingUI"]/*[target isKindOfClass:NSClassFromString(@"GrowingUIControlObserver")]*/) {
+        NSString *eventName = @"点击";
+        NSUInteger idx;
+        if (self.superview) {
+            idx = [self.superview.subviews indexOfObject:self];
+        }
+        NSDictionary *properties = @{@"path":[self viewPath], @"text":[self fetchViewText],@"idx":[NSString stringWithFormat:@"%@",@(idx)],@"img":[self fetchViewURLs],@"id":@""};
+        [[KQCStatistic sharedInstance] statisticsOfEvent:eventName properties:properties];
+    }
 }
 
 @end

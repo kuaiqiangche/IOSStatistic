@@ -9,7 +9,8 @@
 #import "UITableView+AutomaticEvents.h"
 #import "NSObject+KQCSwizzle.h"
 #import <objc/message.h>
-#import "UIView+kqc_extra.h"
+#import "UIView+KQCST_View.h"
+#import "KQCStatistic.h"
 
 @implementation UITableView (AutomaticEvents)
 
@@ -26,15 +27,15 @@
     }
 }
 
-void swizzle_didSelectRowAtIndexPath(id self, SEL _cmd, id tableView, id indexpath)
-
+void swizzle_didSelectRowAtIndexPath(id self, SEL _cmd, UITableView *tableView, NSIndexPath * indexpath)
 {
-    
     SEL selector = NSSelectorFromString(@"swizzle_didSelectRowAtIndexPath");
-    
     ((void(*)(id, SEL,id, id))objc_msgSend)(self, selector, tableView, indexpath);
-    NSLog(@"tableview select:target-->%@\n--->indexpath:%@",[tableView kqc_extra_viewController],indexpath);
     
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexpath];
+    NSString *eventName = @"点击";
+    NSDictionary *properties = @{@"path":[cell viewPath], @"text":[cell fetchViewText],@"idx":[NSString stringWithFormat:@"%@,%@",@(indexpath.section),@(indexpath.row)],@"img":[cell fetchViewURLs],@"id":@""};
+    [[KQCStatistic sharedInstance] statisticsOfEvent:eventName properties:properties];
 }
 
 @end

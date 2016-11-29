@@ -8,7 +8,6 @@
 
 #import "NSObject+KQCSwizzle.h"
 #import <objc/runtime.h>
-#import <objc/message.h>
 
 @implementation NSObject (KQCSwizzle)
 

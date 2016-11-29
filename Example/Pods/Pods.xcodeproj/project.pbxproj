@@ -14,18 +14,25 @@
 		322D8F5A8921967E6693079EBD3F698A /* Pods-iOSStatistic_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 199583F5D2F501F6AA3CFD100D833859 /* Pods-iOSStatistic_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62BC1BAB9AF9E6F944600C7B4623739B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		67866D9A787E9186A19858FD8E6C32F4 /* iOSStatistic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE928C4C4D61F62B9E517C796481674A /* iOSStatistic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A4C46D31DDDB092001CA929 /* NSObject+KQCSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4C46C71DDDB092001CA929 /* NSObject+KQCSwizzle.h */; };
-		8A4C46D41DDDB092001CA929 /* NSObject+KQCSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C46C81DDDB092001CA929 /* NSObject+KQCSwizzle.m */; };
-		8A4C46D51DDDB092001CA929 /* UICollectionView+AutomaticEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4C46C91DDDB092001CA929 /* UICollectionView+AutomaticEvents.h */; };
-		8A4C46D61DDDB092001CA929 /* UICollectionView+AutomaticEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C46CA1DDDB092001CA929 /* UICollectionView+AutomaticEvents.m */; };
-		8A4C46D71DDDB092001CA929 /* UIControl+AutomaticEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4C46CB1DDDB092001CA929 /* UIControl+AutomaticEvents.h */; };
-		8A4C46D81DDDB092001CA929 /* UIControl+AutomaticEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C46CC1DDDB092001CA929 /* UIControl+AutomaticEvents.m */; };
-		8A4C46D91DDDB092001CA929 /* UIGestureRecognizer+AutomaticEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4C46CD1DDDB092001CA929 /* UIGestureRecognizer+AutomaticEvents.h */; };
-		8A4C46DA1DDDB092001CA929 /* UIGestureRecognizer+AutomaticEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C46CE1DDDB092001CA929 /* UIGestureRecognizer+AutomaticEvents.m */; };
-		8A4C46DB1DDDB092001CA929 /* UITableView+AutomaticEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4C46CF1DDDB092001CA929 /* UITableView+AutomaticEvents.h */; };
-		8A4C46DC1DDDB092001CA929 /* UITableView+AutomaticEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C46D01DDDB092001CA929 /* UITableView+AutomaticEvents.m */; };
-		8A4C46DD1DDDB092001CA929 /* UIView+kqc_extra.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4C46D11DDDB092001CA929 /* UIView+kqc_extra.h */; };
-		8A4C46DE1DDDB092001CA929 /* UIView+kqc_extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C46D21DDDB092001CA929 /* UIView+kqc_extra.m */; };
+		8AA03A781DED77C900D5D6D0 /* KQCStatistic.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA03A651DED77C900D5D6D0 /* KQCStatistic.h */; };
+		8AA03A791DED77C900D5D6D0 /* KQCStatistic.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA03A661DED77C900D5D6D0 /* KQCStatistic.m */; };
+		8AA03A7A1DED77C900D5D6D0 /* KQCStatisticLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA03A671DED77C900D5D6D0 /* KQCStatisticLogger.h */; };
+		8AA03A7B1DED77C900D5D6D0 /* KQCSTNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA03A681DED77C900D5D6D0 /* KQCSTNetwork.h */; };
+		8AA03A7C1DED77C900D5D6D0 /* KQCSTNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA03A691DED77C900D5D6D0 /* KQCSTNetwork.m */; };
+		8AA03A7D1DED77C900D5D6D0 /* NSObject+KQCSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA03A6A1DED77C900D5D6D0 /* NSObject+KQCSwizzle.h */; };
+		8AA03A7E1DED77C900D5D6D0 /* NSObject+KQCSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA03A6B1DED77C900D5D6D0 /* NSObject+KQCSwizzle.m */; };
+		8AA03A7F1DED77C900D5D6D0 /* UICollectionView+AutomaticEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA03A6C1DED77C900D5D6D0 /* UICollectionView+AutomaticEvents.h */; };
+		8AA03A801DED77C900D5D6D0 /* UICollectionView+AutomaticEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA03A6D1DED77C900D5D6D0 /* UICollectionView+AutomaticEvents.m */; };
+		8AA03A811DED77C900D5D6D0 /* UIControl+AutomaticEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA03A6E1DED77C900D5D6D0 /* UIControl+AutomaticEvents.h */; };
+		8AA03A821DED77C900D5D6D0 /* UIControl+AutomaticEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA03A6F1DED77C900D5D6D0 /* UIControl+AutomaticEvents.m */; };
+		8AA03A831DED77C900D5D6D0 /* UIGestureRecognizer+AutomaticEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA03A701DED77C900D5D6D0 /* UIGestureRecognizer+AutomaticEvents.h */; };
+		8AA03A841DED77C900D5D6D0 /* UIGestureRecognizer+AutomaticEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA03A711DED77C900D5D6D0 /* UIGestureRecognizer+AutomaticEvents.m */; };
+		8AA03A851DED77C900D5D6D0 /* UITableView+AutomaticEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA03A721DED77C900D5D6D0 /* UITableView+AutomaticEvents.h */; };
+		8AA03A861DED77C900D5D6D0 /* UITableView+AutomaticEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA03A731DED77C900D5D6D0 /* UITableView+AutomaticEvents.m */; };
+		8AA03A871DED77C900D5D6D0 /* UIView+KQCST_View.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA03A741DED77C900D5D6D0 /* UIView+KQCST_View.h */; };
+		8AA03A881DED77C900D5D6D0 /* UIView+KQCST_View.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA03A751DED77C900D5D6D0 /* UIView+KQCST_View.m */; };
+		8AA03A891DED77C900D5D6D0 /* UIViewController+AutomaticEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA03A761DED77C900D5D6D0 /* UIViewController+AutomaticEvents.h */; };
+		8AA03A8A1DED77C900D5D6D0 /* UIViewController+AutomaticEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA03A771DED77C900D5D6D0 /* UIViewController+AutomaticEvents.m */; };
 		BA97DDAAF6A39A59B9DCC630424CDCC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		BF505FDEEB5C8881D429FE602A814BB2 /* Pods-iOSStatistic_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D90C87E4BC771EC24620964F4FFF55 /* Pods-iOSStatistic_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -63,18 +70,25 @@
 		7DDE19FFD6A8412C89893AB585D48085 /* Pods-iOSStatistic_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOSStatistic_Example-frameworks.sh"; sourceTree = "<group>"; };
 		82929CE96D6364CAF94E18810F7293C4 /* Pods-iOSStatistic_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOSStatistic_Tests-dummy.m"; sourceTree = "<group>"; };
 		83E0EA33DADEA0459789FE65CD5C53C1 /* Pods-iOSStatistic_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-iOSStatistic_Tests.modulemap"; sourceTree = "<group>"; };
-		8A4C46C71DDDB092001CA929 /* NSObject+KQCSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KQCSwizzle.h"; sourceTree = "<group>"; };
-		8A4C46C81DDDB092001CA929 /* NSObject+KQCSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KQCSwizzle.m"; sourceTree = "<group>"; };
-		8A4C46C91DDDB092001CA929 /* UICollectionView+AutomaticEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+AutomaticEvents.h"; sourceTree = "<group>"; };
-		8A4C46CA1DDDB092001CA929 /* UICollectionView+AutomaticEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+AutomaticEvents.m"; sourceTree = "<group>"; };
-		8A4C46CB1DDDB092001CA929 /* UIControl+AutomaticEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+AutomaticEvents.h"; sourceTree = "<group>"; };
-		8A4C46CC1DDDB092001CA929 /* UIControl+AutomaticEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+AutomaticEvents.m"; sourceTree = "<group>"; };
-		8A4C46CD1DDDB092001CA929 /* UIGestureRecognizer+AutomaticEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+AutomaticEvents.h"; sourceTree = "<group>"; };
-		8A4C46CE1DDDB092001CA929 /* UIGestureRecognizer+AutomaticEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+AutomaticEvents.m"; sourceTree = "<group>"; };
-		8A4C46CF1DDDB092001CA929 /* UITableView+AutomaticEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+AutomaticEvents.h"; sourceTree = "<group>"; };
-		8A4C46D01DDDB092001CA929 /* UITableView+AutomaticEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+AutomaticEvents.m"; sourceTree = "<group>"; };
-		8A4C46D11DDDB092001CA929 /* UIView+kqc_extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+kqc_extra.h"; sourceTree = "<group>"; };
-		8A4C46D21DDDB092001CA929 /* UIView+kqc_extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+kqc_extra.m"; sourceTree = "<group>"; };
+		8AA03A651DED77C900D5D6D0 /* KQCStatistic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KQCStatistic.h; sourceTree = "<group>"; };
+		8AA03A661DED77C900D5D6D0 /* KQCStatistic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KQCStatistic.m; sourceTree = "<group>"; };
+		8AA03A671DED77C900D5D6D0 /* KQCStatisticLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KQCStatisticLogger.h; sourceTree = "<group>"; };
+		8AA03A681DED77C900D5D6D0 /* KQCSTNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KQCSTNetwork.h; sourceTree = "<group>"; };
+		8AA03A691DED77C900D5D6D0 /* KQCSTNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KQCSTNetwork.m; sourceTree = "<group>"; };
+		8AA03A6A1DED77C900D5D6D0 /* NSObject+KQCSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KQCSwizzle.h"; sourceTree = "<group>"; };
+		8AA03A6B1DED77C900D5D6D0 /* NSObject+KQCSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KQCSwizzle.m"; sourceTree = "<group>"; };
+		8AA03A6C1DED77C900D5D6D0 /* UICollectionView+AutomaticEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+AutomaticEvents.h"; sourceTree = "<group>"; };
+		8AA03A6D1DED77C900D5D6D0 /* UICollectionView+AutomaticEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+AutomaticEvents.m"; sourceTree = "<group>"; };
+		8AA03A6E1DED77C900D5D6D0 /* UIControl+AutomaticEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+AutomaticEvents.h"; sourceTree = "<group>"; };
+		8AA03A6F1DED77C900D5D6D0 /* UIControl+AutomaticEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+AutomaticEvents.m"; sourceTree = "<group>"; };
+		8AA03A701DED77C900D5D6D0 /* UIGestureRecognizer+AutomaticEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+AutomaticEvents.h"; sourceTree = "<group>"; };
+		8AA03A711DED77C900D5D6D0 /* UIGestureRecognizer+AutomaticEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+AutomaticEvents.m"; sourceTree = "<group>"; };
+		8AA03A721DED77C900D5D6D0 /* UITableView+AutomaticEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+AutomaticEvents.h"; sourceTree = "<group>"; };
+		8AA03A731DED77C900D5D6D0 /* UITableView+AutomaticEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+AutomaticEvents.m"; sourceTree = "<group>"; };
+		8AA03A741DED77C900D5D6D0 /* UIView+KQCST_View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KQCST_View.h"; sourceTree = "<group>"; };
+		8AA03A751DED77C900D5D6D0 /* UIView+KQCST_View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KQCST_View.m"; sourceTree = "<group>"; };
+		8AA03A761DED77C900D5D6D0 /* UIViewController+AutomaticEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AutomaticEvents.h"; sourceTree = "<group>"; };
+		8AA03A771DED77C900D5D6D0 /* UIViewController+AutomaticEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AutomaticEvents.m"; sourceTree = "<group>"; };
 		8BFD5992F87A750DA719CBB6CBF8EFF8 /* Pods_iOSStatistic_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSStatistic_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F256DE26F2BEF161333DF9F8A3633E2 /* Pods-iOSStatistic_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSStatistic_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		93A34D6D1FAE89A0004EE226D9E19F91 /* Pods-iOSStatistic_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-iOSStatistic_Example.modulemap"; sourceTree = "<group>"; };
@@ -131,18 +145,25 @@
 		2599ABE0A449E413D3095DA75C591208 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8A4C46C71DDDB092001CA929 /* NSObject+KQCSwizzle.h */,
-				8A4C46C81DDDB092001CA929 /* NSObject+KQCSwizzle.m */,
-				8A4C46CB1DDDB092001CA929 /* UIControl+AutomaticEvents.h */,
-				8A4C46CC1DDDB092001CA929 /* UIControl+AutomaticEvents.m */,
-				8A4C46CD1DDDB092001CA929 /* UIGestureRecognizer+AutomaticEvents.h */,
-				8A4C46CE1DDDB092001CA929 /* UIGestureRecognizer+AutomaticEvents.m */,
-				8A4C46CF1DDDB092001CA929 /* UITableView+AutomaticEvents.h */,
-				8A4C46D01DDDB092001CA929 /* UITableView+AutomaticEvents.m */,
-				8A4C46C91DDDB092001CA929 /* UICollectionView+AutomaticEvents.h */,
-				8A4C46CA1DDDB092001CA929 /* UICollectionView+AutomaticEvents.m */,
-				8A4C46D11DDDB092001CA929 /* UIView+kqc_extra.h */,
-				8A4C46D21DDDB092001CA929 /* UIView+kqc_extra.m */,
+				8AA03A651DED77C900D5D6D0 /* KQCStatistic.h */,
+				8AA03A661DED77C900D5D6D0 /* KQCStatistic.m */,
+				8AA03A681DED77C900D5D6D0 /* KQCSTNetwork.h */,
+				8AA03A691DED77C900D5D6D0 /* KQCSTNetwork.m */,
+				8AA03A6A1DED77C900D5D6D0 /* NSObject+KQCSwizzle.h */,
+				8AA03A6B1DED77C900D5D6D0 /* NSObject+KQCSwizzle.m */,
+				8AA03A6C1DED77C900D5D6D0 /* UICollectionView+AutomaticEvents.h */,
+				8AA03A6D1DED77C900D5D6D0 /* UICollectionView+AutomaticEvents.m */,
+				8AA03A6E1DED77C900D5D6D0 /* UIControl+AutomaticEvents.h */,
+				8AA03A6F1DED77C900D5D6D0 /* UIControl+AutomaticEvents.m */,
+				8AA03A701DED77C900D5D6D0 /* UIGestureRecognizer+AutomaticEvents.h */,
+				8AA03A711DED77C900D5D6D0 /* UIGestureRecognizer+AutomaticEvents.m */,
+				8AA03A721DED77C900D5D6D0 /* UITableView+AutomaticEvents.h */,
+				8AA03A731DED77C900D5D6D0 /* UITableView+AutomaticEvents.m */,
+				8AA03A741DED77C900D5D6D0 /* UIView+KQCST_View.h */,
+				8AA03A751DED77C900D5D6D0 /* UIView+KQCST_View.m */,
+				8AA03A761DED77C900D5D6D0 /* UIViewController+AutomaticEvents.h */,
+				8AA03A771DED77C900D5D6D0 /* UIViewController+AutomaticEvents.m */,
+				8AA03A671DED77C900D5D6D0 /* KQCStatisticLogger.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -262,13 +283,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AA03A7B1DED77C900D5D6D0 /* KQCSTNetwork.h in Headers */,
 				67866D9A787E9186A19858FD8E6C32F4 /* iOSStatistic-umbrella.h in Headers */,
-				8A4C46D91DDDB092001CA929 /* UIGestureRecognizer+AutomaticEvents.h in Headers */,
-				8A4C46D51DDDB092001CA929 /* UICollectionView+AutomaticEvents.h in Headers */,
-				8A4C46DD1DDDB092001CA929 /* UIView+kqc_extra.h in Headers */,
-				8A4C46D31DDDB092001CA929 /* NSObject+KQCSwizzle.h in Headers */,
-				8A4C46D71DDDB092001CA929 /* UIControl+AutomaticEvents.h in Headers */,
-				8A4C46DB1DDDB092001CA929 /* UITableView+AutomaticEvents.h in Headers */,
+				8AA03A811DED77C900D5D6D0 /* UIControl+AutomaticEvents.h in Headers */,
+				8AA03A7A1DED77C900D5D6D0 /* KQCStatisticLogger.h in Headers */,
+				8AA03A7D1DED77C900D5D6D0 /* NSObject+KQCSwizzle.h in Headers */,
+				8AA03A7F1DED77C900D5D6D0 /* UICollectionView+AutomaticEvents.h in Headers */,
+				8AA03A781DED77C900D5D6D0 /* KQCStatistic.h in Headers */,
+				8AA03A891DED77C900D5D6D0 /* UIViewController+AutomaticEvents.h in Headers */,
+				8AA03A831DED77C900D5D6D0 /* UIGestureRecognizer+AutomaticEvents.h in Headers */,
+				8AA03A851DED77C900D5D6D0 /* UITableView+AutomaticEvents.h in Headers */,
+				8AA03A871DED77C900D5D6D0 /* UIView+KQCST_View.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,13 +417,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A4C46DA1DDDB092001CA929 /* UIGestureRecognizer+AutomaticEvents.m in Sources */,
+				8AA03A881DED77C900D5D6D0 /* UIView+KQCST_View.m in Sources */,
+				8AA03A861DED77C900D5D6D0 /* UITableView+AutomaticEvents.m in Sources */,
+				8AA03A7C1DED77C900D5D6D0 /* KQCSTNetwork.m in Sources */,
+				8AA03A801DED77C900D5D6D0 /* UICollectionView+AutomaticEvents.m in Sources */,
+				8AA03A821DED77C900D5D6D0 /* UIControl+AutomaticEvents.m in Sources */,
+				8AA03A841DED77C900D5D6D0 /* UIGestureRecognizer+AutomaticEvents.m in Sources */,
+				8AA03A791DED77C900D5D6D0 /* KQCStatistic.m in Sources */,
+				8AA03A8A1DED77C900D5D6D0 /* UIViewController+AutomaticEvents.m in Sources */,
+				8AA03A7E1DED77C900D5D6D0 /* NSObject+KQCSwizzle.m in Sources */,
 				0BB32B4D23DD4DA902F9F6E819B4D367 /* iOSStatistic-dummy.m in Sources */,
-				8A4C46DC1DDDB092001CA929 /* UITableView+AutomaticEvents.m in Sources */,
-				8A4C46DE1DDDB092001CA929 /* UIView+kqc_extra.m in Sources */,
-				8A4C46D81DDDB092001CA929 /* UIControl+AutomaticEvents.m in Sources */,
-				8A4C46D61DDDB092001CA929 /* UICollectionView+AutomaticEvents.m in Sources */,
-				8A4C46D41DDDB092001CA929 /* NSObject+KQCSwizzle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
